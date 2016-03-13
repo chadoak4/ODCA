@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+    <title>ODCA</title>
+    <link href='http://fonts.googleapis.com/css?family=Buenard:700'>
+    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#"><%= image_tag('logo3.png') %></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a>
+            </li>
+            <li><a href="#">Services</a>
+            </li>
+            <li><a href="#">The Team</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+            <li><a href="#">Store</a>
+            </li>
+            <li><a href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="headerwrap" id="home" name="home">
+	    <header class="clearfix">
+	  	    <%= image_tag('logo2.png', height: '400px', width: '500px',class:"img-responsive") %>
+	  	</header>
+	  </div>
+
+    <!-- ==== GREYWRAP ==== -->
+    <div id="greywrap">
+  		<div class="row">
+        <div class="col-lg-4 callout">
+          <%= image_tag('tree', height: '70px', width: '70px') %>
+    			<h2>Conservation</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  			</div><!-- col-lg-4 -->
+
+  			<div class="col-lg-4 callout">
+  				<%= image_tag('brain.png', height: '70px', width: '70px') %>
+  				<h2>Education</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  			</div><!-- col-lg-4 -->
+
+				<div class="col-lg-4 callout">
+					<%= image_tag('heart.png', height: '70px', width: '70px') %>
+					<h2>Title</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div><!-- col-lg-4 -->
+
+        <div class='subscribe'>
+          <div class="col-lg-4-offset-4 callout">
+					  <p>Stay informed by subscribing to ODCA's newsletter. </p>
+          </div>
+				</div><!-- col-lg-4 -->
+
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+          <button type="submit" class="btn btn-default">Subscribe</button>
+        </form>
+
+  		</div><!-- row -->
+    </div><!-- greywrap -->
+
+    <div id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 mb-sm">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <%= image_tag('about1.jpg', class:"img-responsive")%>
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+                <div class="item">
+                  <%= image_tag('about2.jpg', class:"img-responsive")%>
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+                <div class="item">
+                  <%= image_tag('about3.jpg', class:"img-responsive")%>
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6" data-nekoanim="fadeInUp" data-nekodelay="200">
+            <h2 class="no-mt">About Us</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What we do -->
+    <div id="services">
+        <h2 class="services"><center>Our Services</center></h2>
+      <div class="container">
+  			<div class="row">
+  				<div class="col-md-6">
+  					<h2><strong><u>What We Do</u></strong></h2>
+  					<p>Lorem ipsum dolor sit amet, lotrem <span class="text-default">some colored text</span>. Nulla explicabo attention to this blanditiis, ex cupiditate ipsam debitis rem.</p>
+  					<ul class="list-icons">
+  						<li><i class="fa fa-check-square-o"></i>    sit amet, consectetur adipisicing</li>
+              <li><i class="fa fa-check-square-o"></i>    sit amet, consectetur adipisicing</li>
+              <li><i class="fa fa-check-square-o"></i>    sit amet, consectetur adipisicing</li>
+              <li><i class="fa fa-check-square-o"></i>    sit amet, consectetur adipisicing</li>
+  					</ul>
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>Some bold text</strong>, unde voluptatum quidem explicabo et eius aut nisi dolore ut.</p>
+  					<a href="page-about.html" class="btn btn-default btn-hvr hvr-shutter-out-horizontal btn-lg"><i class="icon-users-1 pr-10"></i>Find Out More!</a>
+  				</div>
+
+          <div class="col-md-6">
+  					<br>
+  					<div role="tabpanel">
+  						<!-- Nav tabs -->
+  						<ul class="nav nav-tabs style-1" role="tablist">
+  							<li role="presentation" class="active"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
+  							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Testimonials</a></li>
+  						</ul>
+
+  						<!-- Tab panes -->
+  						<div class="tab-content">
+  							<div role="tabpanel" class="tab-pane fade in active" id="video">
+  								<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="//player.vimeo.com/video/29198414?byline=0&amp;portrait=0"></iframe>
+  									<p><a href="http://vimeo.com/29198414">ODCA's Services</a></p>
+  								</div>
+  							</div>
+  							<div role="tabpanel" class="tab-pane fade" id="messages">
+                  <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                    <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="false">
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                        <div class="active item">
+                          <%= image_tag('about1.jpg', class: "img-responsive", class: 'img-circle', height: '200px', width:'200px') %>
+                          <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                          </blockquote>
+                        </div>
+                        <div class="item">
+                          <%= image_tag('about1.jpg', class: "img-responsive", class: 'img-circle', height: '200px', width:'200px') %>
+                          <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                          </blockquote>
+                        </div>
+                        <div class="item">
+                            <%= image_tag('about1.jpg', class: "img-responsive", class: 'img-circle', height: '200px', width:'200px') %>
+                            <blockquote>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <%= image_tag('about1.jpg', class: "img-responsive", class: 'img-circle', height: '200px', width:'200px') %>
+                            <blockquote>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                          <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                          <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                        </ol>
+                      </div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+      </div>
+    </div>
+
+    <!-- ==== SECTION DIVIDER1 -->
+    <section class="section-divider textdivider divider1">
+      <div class="container">
+        <h1>The sea, once it casts its spell, holds one in its net of wonder forever.</h1>
+        <hr>
+        <p>Jacques Yves Cousteau</p>
+      </div><!-- container -->
+    </section><!-- section -->
+
+
+    <!-- team -->
+<!--
+			<section class="pt-medium pb-medium rollover effect-sarah">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12 text-center heading" data-nekoanim="fadeInUp" data-nekodelay="10">
+							<h1><span>We are awesome</span>Meet our team</h1>
+						</div>
+					</div>
+
+
+					<div class="row-fw clearfix">
+						<div class="col-sm-6 col-md-4 no-padding" data-nekoanim="fadeIn" data-nekodelay="100">
+							<article class="text-center">
+								<figure class="dark-color">
+									<img src="images/team/team-corporate-1.jpg" alt="image" class="responsive">
+									<figcaption>
+										<div class="rollover-content">
+
+											<div class="description light-text">
+
+												<h2>
+													The question
+												</h2>
+
+												<p>
+													The question I ask myself like almost every day is, ‘Am I doing the most important thing I could be doing?
+												</p>
+
+												<ul class="social-icons main-color circle">
+													<li>
+														<a href="#" class="rss " title="rss"><i class="icon-glyph-342"></i></a>
+													</li>
+													<li>
+														<a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
+													</li>
+													<li>
+														<a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a>
+													</li>
+													<li>
+														<a href="#" class="gplus" title="gplus"><i class="icon-glyph-317"></i></a>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+									</figcaption>
+
+								</figure>
+								<div class="pt-small">
+									<h2><small>Martin</small><br />
+										Somerville<br>
+										<small class="text-main-color"><strong>C.E.0</strong></small>
+									</h2>
+								</div>
+							</article>
+						</div>
+
+						<div class="col-sm-6 col-md-4 no-padding" data-nekoanim="fadeIn" data-nekodelay="200">
+							<article class="text-center">
+								<figure class="dark-color">
+									<img src="images/team/team-corporate-2.jpg" alt="image" class="responsive">
+									<figcaption>
+										<div class="rollover-content">
+											<div class="description light-text">
+												<h2>High expectations</h2>
+												<p>
+													High expectations are the key to absolutely everything.
+												</p>
+												<ul class="social-icons main-color circle">
+													<li>
+														<a href="#" class="rss " title="rss"><i class="icon-glyph-342"></i></a>
+													</li>
+													<li>
+														<a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</figcaption>
+								</figure>
+								<div class="pt-small">
+									<h2><small>Leona</small><br />
+										Fibonacci<br>
+										<small class="text-main-color"><strong>Sales</strong></small>
+									</h2>
+								</div>
+							</article>
+						</div>
+
+						<div class="col-sm-6 col-md-4 no-padding" data-nekoanim="fadeIn" data-nekodelay="300">
+							<article class="text-center">
+								<figure class="dark-color">
+									<img src="images/team/team-corporate-3.jpg" alt="image" class="responsive">
+									<figcaption>
+										<div class="rollover-content">
+											<div class="description light-text">
+												<h2>
+													Passion
+												</h2>
+												<p>
+													Without passion, you don’t have any energy, and without energy, you simply have nothing
+												</p>
+
+												<ul class="social-icons main-color circle">
+													<li>
+														<a href="#" class="rss " title="rss"><i class="icon-glyph-342"></i></a>
+													</li>
+													<li>
+														<a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
+													</li>
+													<li>
+														<a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a>
+													</li>
+													<li>
+														<a href="#" class="gplus" title="gplus"><i class="icon-glyph-317"></i></a>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+
+									</figcaption>
+
+								</figure>
+
+								<div class="pt-small">
+									<h2><small>Maria</small><br />
+										Mitchell<br>
+										<small class="text-main-color"><strong>Graphic designer</strong></small>
+									</h2>
+								</div>
+							</article>
+						</div>
+
+
+					</div><!-- row -->
+
+				<!-- </div><!-- container --> -->
+			<!-- </section> -->
+			<!-- / team -->
+  </body>
+
+</html>
