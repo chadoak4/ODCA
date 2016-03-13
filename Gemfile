@@ -13,8 +13,8 @@ gem 'dotenv-rails'
 gem "font-awesome-rails"
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem 'pg'
 gem 'rails', '4.2.5'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
