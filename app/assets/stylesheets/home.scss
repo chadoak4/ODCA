@@ -31,51 +31,6 @@
   position: relative;
   }
 
-// Bootstrap Navbar //
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(119, 119, 119, 1);
-}
-#custom-bootstrap-menu.navbar-default {
-    font-size: 13px;
-    background-color: rgba(41, 41, 41, 1);
-    border-bottom-width: 0px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(196, 192, 192, 1);
-    background-color: rgba(41, 41, 41, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(139, 232, 203, 1);
-    background-color: rgba(0, 0, 0, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #000000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #000000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #292929;
-}
-.navbar-brand  {
-  position: relative;
-  top: -15px;
-}
-
-
 #greywrap {
 	background: #f5f5f5;
 	margin-top: 0px;
@@ -96,6 +51,10 @@
 	letter-spacing: 1px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-family: 'Merriweather'
+}
+#greywrap h2{
+	font-family: 'Raleway'
 }
 
 .subscribe p {
@@ -111,6 +70,16 @@
 #about-us{
   padding-top: 40px;
   padding-bottom: 40px;
+	background-color: #ffffff;
+}
+#about-us h2{
+	font-family: 'Raleway';
+}
+#about-us p {
+	font-family: 'Merriweather';
+}
+#about-us .lead{
+	font-size: 16px;
 }
 // services //
 #services {
@@ -121,7 +90,18 @@
   padding-bottom: 40px;
 
 }
-
+#services h2{
+	font-family: 'Raleway';
+}
+#services p {
+	font-family: 'Merriweather';
+}
+#services li {
+	font-family: 'Merriweather';
+}
+#services a {
+	font-family: 'Raleway';
+}
 #services ul {
   list-style-type:none;
 }
@@ -182,16 +162,79 @@
 	padding-top: 70px;
 	color: white;
 	font-size: 40px;
+	font-family: 'Merriweather';
 }
 
 .textdivider p {
 	color: white;
 	font-size: 25px;
+	font-family: 'Merriweather';
 }
 
 
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: image-url('divider1.jpg')
+	background-image: image-url('divider1.jpg');
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-top: 0px;
+}
+
+.team-section	{
+	padding-top: 40px;
+	background-color: #ffffff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.team-section	h2 {
+	font-family: 'Raleway';
+}
+.team-section	p {
+	font-family: 'Merriweather';
+}
+.team-image img	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: -20px;
+}
+.meet-the-team-header	{
+	position: relative;
+	top: -120px;
+	font-family: 'Raleway';
+}
+.meet-the-team-header p{
+	padding-top: 50px;
+}
+.awesome-header {
+	position: relative;
+	top: 10px;
+	font-family: 'Raleway';
+}
+.row-fw	{
+	position: relative;
+	top: -70px;
+}
+.contact	{
+	padding-top: 40px;
+	padding-bottom: 100px;
+	background: #f5f5f5;
+}
+.contact-subheading{
+	position: relative;
+	top: -25px;
+}
+.contact h2{
+	font-family: 'Raleway';
+}
+.contact h3{
+	font-family: 'Merriweather';
+}
+.contact button {
+	font-family: 'Raleway';
+}
+body {
+  overflow-x:hidden;
 }
