@@ -1,0 +1,9 @@
+<div class="col-lg-offset-2 col-lg-8">
+  <%= simple_form_for @contact do |f| %>
+  <%= f.input  :display_name, label: "Name", :input_html => {:style=> 'width: 600px'}%>
+  <%= f.input  :email, label: "Email Address", :input_html => {:style=> 'width: 600px'}%>
+  <%= f.input  :phone, label: "Phone Number", :input_html => {:style=> 'width: 600px'}%>
+  <%= f.input  :message, label: "Your Message", :input_html => {:style=> 'width: 600px', :rows => 7}%>
+  <%= f.button :submit, "Submit" %>
+  <% end %>
+</div><!-- col-lg -->

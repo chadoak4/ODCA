@@ -1,0 +1,21 @@
+<div class="title">
+  <p>
+    ODCA's Blog
+  </p>
+</div>
+
+<% @blogs.each do |blog| %>
+<% @blog = blog %>
+  <div class="col-md-8 col-md-offset-2 blog-title">
+    <h2><%= blog.title %></h2>
+  </div>
+  <div class="col-md-8 col-md-offset-2 blogpost">
+    <p>
+      <%= truncate blog.entry, length: 400 %>
+    </p>
+    <%= link_to 'Read More', blog_path(blog) %>
+  </div>
+<% end %>
+<div class="paginate">
+  <%= paginate @blogs %>
+</div>

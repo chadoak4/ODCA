@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
 
-  def show
+  def index
 
   end
 

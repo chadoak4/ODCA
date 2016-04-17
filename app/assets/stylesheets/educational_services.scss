@@ -1,0 +1,118 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.title p{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 4em;
+  font-family: 'Merriweather';
+  font-weight: 200;
+  text-shadow: 2px 2px #bfb9ab;
+}
+
+.top .links{
+  font-family: 'Raleway';
+  font-size: 18px;
+  text-align: center;
+  color: #292929;
+}
+.top .links a{
+  color: #292929;
+}
+
+.educational_services {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: thin solid #292929;
+  padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.research {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  border: thin solid #292929;
+}
+.research h3 {
+  font-family: 'Raleway';
+}
+.research p {
+  font-family: 'Merriweather';
+}
+
+.research strong {
+  font-size: 16px;
+  font-weight: 1000;
+  font-family: 'Raleway';
+}
+
+.research a {
+  font-family: 'Merriweather';
+  color: #292929;
+}
+
+.research a:hover {
+    color: red;
+}
+
+/* selected link */
+.research a:visited {
+    color: #292929;
+}
+
+.guardians {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border: thin solid #292929;
+}
+.guardians h3 {
+  font-family: 'Raleway';
+}
+.guardians p {
+  font-family: 'Merriweather';
+}
+
+.mermaids {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+  border: thin solid #292929;
+}
+.mermaids h3 {
+  font-family: 'Raleway';
+}
+.mermaids p {
+  font-family: 'Merriweather';
+}
+.conservation {
+  background-color: #ffffff;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+  border: thin solid #292929;
+}
+.conservation h3 {
+  font-family: 'Raleway';
+}
+.conservation p {
+  font-family: 'Merriweather';
+}
+
+
+
+em {
+  font-size: 11px;
+}
