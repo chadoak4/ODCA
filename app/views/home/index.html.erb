@@ -20,23 +20,24 @@
 
     <!-- ==== GREYWRAP ==== -->
     <div id="greywrap">
+      <div class="col-lg-offset-2 col-lg-8 stand">We Stand For</div>
+      <br>
+      <br>
   		<div class="row">
+
         <div class="col-lg-4 callout">
-          <%= image_tag('tree', height: '70px', width: '70px') %>
+          <%= image_tag('nature.png', height: '70px', width: '70px') %>
     			<h2>Conservation</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
   			</div><!-- col-lg-4 -->
 
   			<div class="col-lg-4 callout">
   				<%= image_tag('brain.png', height: '70px', width: '70px') %>
   				<h2>Education</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
   			</div><!-- col-lg-4 -->
 
 				<div class="col-lg-4 callout">
-					<%= image_tag('heart.png', height: '70px', width: '70px') %>
-					<h2>Title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<%= image_tag('danger.png', height: '70px', width: '70px') %>
+					<h2>Research</h2>
 				</div><!-- col-lg-4 -->
 
         <div class='subscribe'>
@@ -293,7 +294,7 @@
 		</div>
 		<!-- / team -->
     <!-- Contact Section -->
-    <div class="contact">
+    <!-- <div class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -335,7 +336,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div class="col-lg-offset-2 col-lg-8 contact">
+      <center>
+        <h2>Contact Us</h2>
+      </center>
+      <%= simple_form_for Contact.new do |f| %>
+      <%= f.input  :display_name, label: "Name:", :input_html => {:style=> 'width: 600px'}%>
+      <%= f.input  :email, label: "Email Address:", :input_html => {:style=> 'width: 600px'}%>
+      <%= f.input  :phone, label: "Phone Number:", :input_html => {:style=> 'width: 600px'}%>
+      <%= f.input  :message, label: "Your Message:", :input_html => {:style=> 'width: 600px', :rows => 7}%>
+      <%= f.button :submit, "Submit" %>
+      <% end %>
+    </div><!-- col-lg -->
+
 
   </body>
 
