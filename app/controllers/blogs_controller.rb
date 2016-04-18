@@ -1,7 +1,6 @@
-
 class BlogsController < ApplicationController
   before_action :find_blog, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user!
+  before_action :authenticate_user!, :except => [:index, :show]
 
   def index
     @blogs = Blog.order('created_at DESC').page(params[:page]).per(10)
@@ -49,7 +48,7 @@ class BlogsController < ApplicationController
     private
 
     def blog_params
-      params.require(:blog).permit(:title, :entry)
+      params.require(:blog).permit(:title, :entry,:blog_image)
     end
 
 end

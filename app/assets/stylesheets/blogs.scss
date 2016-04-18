@@ -25,6 +25,29 @@
   text-shadow: 2px 2px #bfb9ab;
 }
 
+.title a:link {
+  font-family: 'Raleway';
+  color: #292929;
+}
+
+.title a:visited {
+  font-family: 'Raleway';
+  color: #292929;
+}
+
+.title a:hover {
+  font-family: 'Raleway';
+  color: #292929;
+}
+
+.title a{
+  font-size: 20px;
+  position:relative;
+  left: 225px;
+  padding-right: 25px;
+}
+
+
 .blogpost a:link{
   font-family: 'Raleway';
   color: #292929;
